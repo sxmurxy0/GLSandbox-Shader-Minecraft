@@ -1,0 +1,12 @@
+modLoader="javafml" #mandatory
+loaderVersion="[36, 37)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+license="All rights reserved"
+issueTrackerURL="https://github.com/sxmurxy2007/GlSandboxShader-1.16/issues" #optional
+[[mods]] #mandatory
+modId="shaderexample" #mandatory
+version="1.0" #mandatory
+displayName="Shader example" #mandatory
+displayURL="https://github.com/sxmurxy2007/GlSandboxShader-1.16"
+logoFile="logo.png" #optional
+authors="sxmurxy" #optional
+description='''    GLSL shader example.'''
