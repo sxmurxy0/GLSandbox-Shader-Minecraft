@@ -3,7 +3,7 @@
 
 More fragment shaders:
 https://glslsandbox.com/</br>
-When you copy the shader code, make sure that ***uniform*** variables have the same names as in Shader.class. Change them if necessary.
+When you copy the shader code, make sure that ***uniform*** variables have the same names as in Shader.java. Change them if necessary.
 
 **How it looks like:**
 
