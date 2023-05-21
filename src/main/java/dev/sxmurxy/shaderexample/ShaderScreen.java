@@ -14,24 +14,22 @@ public class ShaderScreen extends Screen {
 	private Screen lastScreen;
 	
 	public ShaderScreen(Screen lastScreen) {
-		super(new StringTextComponent("Shader example"));
+		super(new StringTextComponent(""));
 		this.lastScreen = lastScreen;
 	}
 	
 	@Override
 	public void render(MatrixStack matrices, int mouseX, int mouseY, float partialTicks) {
-		shader.draw(mouseX / 300f, (Minecraft.getInstance().getWindow().getGuiScaledHeight() - mouseY) / 300f);
+		shader.draw(mouseX / 300d, (Minecraft.getInstance().getWindow().getGuiScaledHeight() - mouseY) / 300d);
 		super.render(matrices, mouseX, mouseY, partialTicks);
 	}
 	
 	@Override
 	public void init() {
-		shader = new Shader("glsandbox.fsh");
+		this.shader = new Shader("glsandbox.fsh");
 		MainWindow window = Minecraft.getInstance().getWindow();
 		this.addButton(new Button(window.getGuiScaledWidth() - 80, window.getGuiScaledHeight() - 30, 70, 20, new StringTextComponent("Close"),
-					(button) -> { 
-						Minecraft.getInstance().setScreen(lastScreen);
-							}));
+					button -> Minecraft.getInstance().setScreen(lastScreen) ));
 	}
 	
 }
